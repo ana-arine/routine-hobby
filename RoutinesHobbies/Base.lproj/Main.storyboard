@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RoutinesHobbies" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vBT-Gl-HRK" userLabel="Menu View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="R8f-bI-Gbh">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qA-ZP-vJr">
+                                                <rect key="frame" x="0.0" y="0.0" width="206.5" height="124"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="22"/>
+                                                <state key="normal" title="Routine">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showRoutine" destination="BYZ-38-t0r" eventType="touchUpInside" id="3yp-Go-UzV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bVE-3Y-K7o">
+                                                <rect key="frame" x="207.5" y="0.0" width="206.5" height="124"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="22"/>
+                                                <state key="normal" title="Hobbies">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showHobbies" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lv6-rn-rV4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.45837986469999997" green="0.85880786180000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="R8f-bI-Gbh" secondAttribute="bottom" id="Af1-qv-hO7"/>
+                                    <constraint firstItem="R8f-bI-Gbh" firstAttribute="top" secondItem="vBT-Gl-HRK" secondAttribute="top" id="KUy-Qc-84y"/>
+                                    <constraint firstAttribute="trailing" secondItem="R8f-bI-Gbh" secondAttribute="trailing" id="bp5-vr-NS5"/>
+                                    <constraint firstItem="R8f-bI-Gbh" firstAttribute="leading" secondItem="vBT-Gl-HRK" secondAttribute="leading" id="cph-C0-3o1"/>
+                                    <constraint firstAttribute="height" constant="124" id="p4Q-93-iwg"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHY-PJ-9Yw" userLabel="Routine View">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_working_remotely_jh40" translatesAutoresizingMaskIntoConstraints="NO" id="Kq8-bL-Ty5">
+                                        <rect key="frame" x="-23.5" y="236.5" width="461" height="265.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9939635288004115" green="0.99953407049999998" blue="0.81298101786982468" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Kq8-bL-Ty5" firstAttribute="centerX" secondItem="HHY-PJ-9Yw" secondAttribute="centerX" id="HML-nr-hmY"/>
+                                    <constraint firstItem="Kq8-bL-Ty5" firstAttribute="centerY" secondItem="HHY-PJ-9Yw" secondAttribute="centerY" id="lI3-l2-mq0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dr7-8f-Sni" userLabel="Hobbies View">
+                                <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="undraw_Tree_swing_646s" translatesAutoresizingMaskIntoConstraints="NO" id="CiW-yV-HT0">
+                                        <rect key="frame" x="24.5" y="230" width="365" height="278.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.89000000000000001" green="0.87050660974222482" blue="0.8292717375527453" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CiW-yV-HT0" firstAttribute="centerX" secondItem="dr7-8f-Sni" secondAttribute="centerX" id="WiG-y3-lPu"/>
+                                    <constraint firstItem="CiW-yV-HT0" firstAttribute="centerY" secondItem="dr7-8f-Sni" secondAttribute="centerY" id="nXn-UP-4Kc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dr7-8f-Sni" secondAttribute="bottom" id="Ev7-We-rqJ"/>
+                            <constraint firstItem="vBT-Gl-HRK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K6f-PU-614"/>
+                            <constraint firstItem="HHY-PJ-9Yw" firstAttribute="centerX" secondItem="dr7-8f-Sni" secondAttribute="centerX" id="NN7-Pg-IPe"/>
+                            <constraint firstItem="vBT-Gl-HRK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="W7a-LJ-vhb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="HHY-PJ-9Yw" secondAttribute="bottom" id="Zbh-88-UwZ"/>
+                            <constraint firstItem="HHY-PJ-9Yw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f2I-IO-n34"/>
+                            <constraint firstItem="HHY-PJ-9Yw" firstAttribute="top" secondItem="vBT-Gl-HRK" secondAttribute="bottom" id="hQT-Qu-zpR"/>
+                            <constraint firstAttribute="trailing" secondItem="dr7-8f-Sni" secondAttribute="trailing" id="htF-mq-HMM"/>
+                            <constraint firstItem="dr7-8f-Sni" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iki-Pl-ViJ"/>
+                            <constraint firstItem="vBT-Gl-HRK" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kJW-dC-q3w"/>
+                            <constraint firstItem="HHY-PJ-9Yw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="psP-qv-gZl"/>
+                            <constraint firstItem="dr7-8f-Sni" firstAttribute="top" secondItem="vBT-Gl-HRK" secondAttribute="bottom" id="wtx-UY-0Uf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnHobbies" destination="bVE-3Y-K7o" id="S3w-CE-AW3"/>
+                        <outlet property="btnRoutine" destination="6qA-ZP-vJr" id="xhd-L3-6XD"/>
+                        <outlet property="viewHobbies" destination="dr7-8f-Sni" id="N5T-7C-O4s"/>
+                        <outlet property="viewRoutine" destination="HHY-PJ-9Yw" id="cTl-dZ-Ov1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.724637681159422" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="undraw_Tree_swing_646s" width="365" height="278.5"/>
+        <image name="undraw_working_remotely_jh40" width="461" height="265.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
